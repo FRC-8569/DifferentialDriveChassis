@@ -25,6 +25,8 @@ public class Chassis extends SubsystemBase{
     public Chassis(){
         LeftMotor = new SparkMax(MotorConstants.LeftMotorID, MotorConstants.kMotorType);
         RightMotor = new SparkMax(MotorConstants.RightMotorID, MotorConstants.kMotorType);
+        LeftConfig = new SparkMaxConfig();
+        RightConfig = new SparkMaxConfig();
 
         LeftConfig
             .idleMode(IdleMode.kBrake)
